@@ -4,14 +4,11 @@
     "type": "module",
     "dependencies": {
         "@modelcontextprotocol/sdk": "latest",
-        "mcp-handler": "^1.0.7",
+        "mcp-handler": "latest",
         "zod": "latest"
     },
     "devDependencies": {
         "@types/node": "^20.0.0",
         "typescript": "^5.0.0"
-    },
-    "scripts": {
-    "build": "tsc"
-    }
+    } 
 }
