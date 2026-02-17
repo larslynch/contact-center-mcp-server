@@ -3,7 +3,7 @@ import { createMcpHandler } from 'mcp-handler';
 
 const BASE_URL = "https://3ba4717d-1d4d-4f78-8374-9985c6db801b.mock.pstmn.io";
 
-export const POST = createMcpHandler((server) => {
+const handler = createMcpHandler((server) => {
 // Tool 1: Customer Name
 server.tool(
     "get_customer_name",
