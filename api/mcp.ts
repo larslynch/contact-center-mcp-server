@@ -78,7 +78,11 @@ server.tool(
       }
     }
   );
-});
+},
+{},
+{ basePath: '/api' },
+
+);
 
 // Vercel requires manual export of methods if not using default
-export default POST;
+export { handler as GET, handler as POST, handler as DELETE };
