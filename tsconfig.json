@@ -1,33 +1,11 @@
 {
     "compilerOptions": {
-      "target": "ES2022",
-      "lib": ["dom", "dom.iterable", "esnext"],
-      "allowJs": true,
-      "skipLibCheck": true,
-      "strict": true,
-      "noEmit": true,
-      "esModuleInterop": true,
+      "target": "ESNext",
       "module": "ESNext",
-      "moduleResolution": "bundler", // Best for Next.js App Router
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "jsx": "preserve",
-      "incremental": true,
-      "plugins": [
-        {
-          "name": "next"
-        }
-      ],
-      "paths": {
-        "@/*": ["./src/*"]
-      }
-    },
-    "include": [
-      "next-env.d.ts",
-      "**/*.ts",
-      "**/*.tsx",
-      ".next/types/**/*.ts",
-      "scripts/mcp-server.ts" // Ensure your server script is included
-    ],
-    "exclude": ["node_modules"]
+      "moduleResolution": "node",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "outDir": "dist"
+    }
   }
